@@ -1,6 +1,6 @@
 # Template file for 'freecad'
 pkgname=freecad
-version=0.19pre.c216f9
+version=0.19pre.d8e476ef
 revision=1
 gitSHA=d8e476ef428017900dfe0f9359ba448503c216f9
 wrksrc="FreeCAD-${gitSHA}"
