@@ -3,7 +3,7 @@ pkgname=freecad
 version=0.19pre.c216f9
 revision=1
 gitSHA=d8e476ef428017900dfe0f9359ba448503c216f9
-wrksrc="FreeCAD-${version}"
+wrksrc="FreeCAD-${gitSHA}"
 build_style=cmake
 
 # CMAKE_INSTALL_LIBDIR by default doesn't use PREFIX, so we set it manually
@@ -44,6 +44,8 @@ fi
 
 post_extract() {
 	# Report exact minor version
+	# using , instead of / for s/// separation
+	# replacing everything after the . in CMakeLists.txt with the minor version
 	sed -i -e "s,^\(set(PACKAGE_VERSION_MINOR\) .*,\1 \"${version#*.}\")," CMakeLists.txt
 
 	# SubWCRev.py (SCM check) reports "unknown" for these fields
