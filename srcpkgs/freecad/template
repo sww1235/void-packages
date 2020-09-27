@@ -1,7 +1,8 @@
 # Template file for 'freecad'
 pkgname=freecad
-version=0.18.4
-revision=10
+version=0.19pre
+revision=1
+gitSHA=d8e476ef428017900dfe0f9359ba448503c216f9
 wrksrc="FreeCAD-${version}"
 build_style=cmake
 
@@ -33,9 +34,9 @@ short_desc="General purpose 3D CAD modeler"
 maintainer="yopito <pierre.bourgin@free.fr>"
 license="LGPL-2.0-or-later"
 homepage="https://freecadweb.org/"
-distfiles="https://github.com/FreeCAD/FreeCAD/archive/${version}.tar.gz"
-checksum=4e0cce447b31b8989a00cf68c49ae012ce8e5546a56c6e0874fbd8f7ddedffd2
-
+distfiles="https://github.com/FreeCAD/FreeCAD/archive/${gitSHA}.tar.gz"
+#checksum=4e0cce447b31b8989a00cf68c49ae012ce8e5546a56c6e0874fbd8f7ddedffd2
+checksum=724609893d52ad3b456bf62d4b80a7f30c37e82eb06e0bf9d5c922eadc37437d
 if [ "$XBPS_TARGET_LIBC" = musl ]; then
 	makedepends+=" libexecinfo-devel"
 	LDFLAGS="-lexecinfo"
