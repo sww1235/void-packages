@@ -737,7 +737,7 @@ diff --git src/Mod/Fem/Gui/ViewProviderFemPostObject.cpp b/src/Mod/Fem/Gui/ViewP
 index dde2bd824..3acfead65 100644
 --- src/Mod/Fem/Gui/ViewProviderFemPostObject.cpp
 +++ src/Mod/Fem/Gui/ViewProviderFemPostObject.cpp
-@@ -56,6 +56,11 @@
+@@ -57,6 +57,11 @@
  
  using namespace FemGui;
  
@@ -749,7 +749,7 @@ index dde2bd824..3acfead65 100644
  
  PROPERTY_SOURCE(FemGui::ViewProviderFemPostObject, Gui::ViewProviderDocumentObject)
  
-@@ -316,7 +321,7 @@ void ViewProviderFemPostObject::update3D() {
+@@ -317,7 +322,7 @@ void ViewProviderFemPostObject::update3D() {
      vtkDataArray *tcoords = NULL;
      vtkCellArray *cells;
      vtkIdType npts = 0;
