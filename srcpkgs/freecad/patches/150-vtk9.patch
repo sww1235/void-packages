@@ -263,7 +263,7 @@ diff --git src/3rdParty/salomesmesh/src/SMDS/SMDS_Mesh.cpp b/src/3rdParty/salome
 index 4ac6fd768..51b281699 100644
 --- src/3rdParty/salomesmesh/src/SMDS/SMDS_Mesh.cpp
 +++ src/3rdParty/salomesmesh/src/SMDS/SMDS_Mesh.cpp
-@@ -4763,7 +4763,11 @@ void SMDS_Mesh::dumpGrid(string ficdump)
+@@ -4768,7 +4768,11 @@ void SMDS_Mesh::dumpGrid(string ficdump)
          ficcon << endl;
    }
    ficcon << "-------------------------------- connectivity " <<  nbPoints << endl;
