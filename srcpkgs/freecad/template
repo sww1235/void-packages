@@ -22,7 +22,7 @@ makedepends="python3-devel boost-devel libxerces-c-devel zlib-devel occt-devel
  coin3-devel libshiboken2-devel libspnav-devel pyside2-tools
  liblz4-devel libpyside2-python3-devel python3-matplotlib netcdf-devel
  jsoncpp-devel qt5-devel qt5-svg-devel qt5-tools-devel qt5-webkit-devel
- qt5-x11extras-devel coin3-doc glew-devel"
+ qt5-x11extras-devel qt5-xmlpatterns-devel coin3-doc glew-devel"
 
 # FreeCAD help: qt5/assistant with datas in SQLite format
 depends="python3-matplotlib python3-pyside2 qt5-plugin-sqlite python3-pivy"
