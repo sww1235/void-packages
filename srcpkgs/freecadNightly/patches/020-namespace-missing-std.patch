@@ -1,0 +1,12 @@
+# reason: fix build with gcc9
+# upstream: yes
+--- src/Mod/Part/App/Geometry.cpp
++++ src/Mod/Part/App/Geometry.cpp
+@@ -141,6 +141,7 @@
+ #include "Geometry.h"
+ 
+ using namespace Part;
++using namespace std;
+ 
+ 
+ const char* gce_ErrorStatusText(gce_ErrorType et)
