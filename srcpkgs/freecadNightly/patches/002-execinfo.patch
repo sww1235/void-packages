@@ -1,5 +1,7 @@
---- src/App/Application.cpp.orig
-+++ src/App/Application.cpp
+diff --git a/src/App/Application.cpp b/src/App/Application.cpp
+index 2d498974d..baacdc2fe 100644
+--- a/src/App/Application.cpp
++++ b/src/App/Application.cpp
 @@ -1577,7 +1577,9 @@ static void freecadNewHandler ()
  #endif
  
