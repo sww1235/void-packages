@@ -1,12 +1,15 @@
 # reason: fix build with gcc9
 # upstream: yes
+diff --git src/Mod/Part/App/Geometry.cpp src/Mod/Part/App/Geometry.cpp
+index e7663fdf2..692e1a9d5 100644
 --- src/Mod/Part/App/Geometry.cpp
 +++ src/Mod/Part/App/Geometry.cpp
-@@ -141,6 +141,7 @@
+@@ -141,7 +141,7 @@
  #include "Geometry.h"
  
  using namespace Part;
+-
 +using namespace std;
  
- 
  const char* gce_ErrorStatusText(gce_ErrorType et)
+ {
