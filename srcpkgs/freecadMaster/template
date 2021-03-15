@@ -1,9 +1,9 @@
-# Template file for 'freecadNightly'
-pkgname=freecadNightly
+# Template file for 'freecadMaster'
+pkgname=freecadMaster
 gitSHA=d8e476ef428017900dfe0f9359ba448503c216f9
-version="0.19pre.${gitSHA:0:8}"
+version="0.20pre"
 revision=1
-wrksrc="FreeCAD-${gitSHA}"
+wrksrc="FreeCAD-${version}"
 build_style=cmake
 
 # CMAKE_INSTALL_LIBDIR by default doesn't use PREFIX, so we set it manually
@@ -58,6 +58,6 @@ post_install() {
 	# do not move binaries but symlink them instead.
 	vmkdir usr/bin
 	for f in FreeCAD FreeCADCmd; do
-		ln -s ${_inst_prefix}/bin/${f} ${DESTDIR}/usr/bin/${f}-nightly
+		ln -s ${_inst_prefix}/bin/${f} ${DESTDIR}/usr/bin/${f}-master
 	done
 }
